@@ -1,18 +1,19 @@
 let alunas = ["Raquel", "Talita", "Lia ", "Daiana", "Rosana", "Carol" ,"Telma", "Barbara", "Silmara", "Raissa", "Cecilia", "Manu", "Carol", "Angel", "Tais", "Ana","Simone","Marcela", "Jennifer", "Denisa", "Adriely", "Barbara", "Priscila", "Jack", "Adriana", "Pri", "Romenia", "Monique", "Jo","Aline"];
 
-let lista = document.getElementById("lista-alunas")
+// let lista = document.getElementById("lista-alunas")
+// for (let tamanho = 0; tamanho < alunas.length ; tamanho ++ ) {
 
-for (let tamanho = 0; tamanho < alunas.length ; tamanho ++ ) {
+// let conteudo = document.createElement ("li")
 
-let conteudo = document.createElement ("li")
+// let lista = document.getElementById("lista-alunas")
 
-conteudo.textContent= alunas [tamanho]
+// conteudo.textContent= alunas [tamanho]
 
-lista.appendChild(conteudo)
+// lista.appendChild(conteudo)
 
-} 
+// } 
 
-//        ////////  ou  ////////
+                           //    *************    ////////  ou  ////////
 
       
 // const lista =document.getElementById("lista-alunas")  //precisa chamar a mãe, passou o id do html, para saber onde vai criar a lista 
@@ -27,6 +28,19 @@ lista.appendChild(conteudo)
 //     lista.appendChild(item)  //apendar a lista, informar onde vc quer inserir    
 
 // }
+
+
+                     //    *************    ////////  ou  ////////
+
+const lista = document.getElementById("lista-alunas")
+
+alunas.forEach (function(aluna) { //  forEach > para cada item do meu array alunas, faca o seguinte, ( passa a função), o parametro sempre vai ser o item do array, 
+
+    let item = document.createElement("li")
+
+    item.textContent = aluna 
+    lista.appendChild(item)
+} )
 
 
 
