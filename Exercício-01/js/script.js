@@ -32,23 +32,15 @@ let alunas = ["Raquel", "Talita", "Lia ", "Daiana", "Rosana", "Carol" ,"Telma", 
 
                      //    *************    ////////  ou  ////////
 
-const lista = document.getElementById("lista-alunas")
+// const lista = document.getElementById("lista-alunas")
 
-alunas.forEach (function(aluna) { //  forEach > para cada item do meu array alunas, faca o seguinte, ( passa a função), o parametro sempre vai ser o item do array, 
+// alunas.forEach (function(aluna) { //  forEach > para cada item do meu array alunas, faca o seguinte, ( passa a função), o parametro sempre vai ser o item do array, 
 
-    let item = document.createElement("li")
+//     let item = document.createElement("li")
 
-    item.textContent = aluna 
-    lista.appendChild(item)
-} )
-
-
-
-
-
-
-
-
+//     item.textContent = aluna 
+//     lista.appendChild(item)
+// } )
 
 //const paragrafo = document.creatElement ("p");
 //const minhaDiv = document.getElementById("conteudo");
@@ -56,8 +48,54 @@ alunas.forEach (function(aluna) { //  forEach > para cada item do meu array alun
 //paragrafo.textContent= "estamos viajando";
 
 
+     // ** saber quantas vezes foi clicada ///
+
+// let soma = 0
+
+// const meuTitulo = document.querySelector(".titulo") //querySelector ele vai pegar o primeiro que achar e vai retornar, coloca . para saber que é uma class ou # para ID, ou ate uma <> Tag.
+
+// meuTitulo.onclick = function logar () {
+//     console.log (soma++)
+// }
+
+
+                 // ***   OU   ***///
+
+// let soma = 0
+
+// const meuTitulo = document.querySelector(".titulo") 
+
+// meuTitulo.addEventListener("click", function logar(){ //.addEventListener ele vai ficar ouvindo, colocar o evento ( scroll, clik...etc), o segundo parametro é a função que vc quer 
+//     console.log (soma++)
+// } )        
+
+
+            // *** MUDAR A COR QUANDO É CLICADO ***///
+
+const meuTitulo = document.querySelector(".titulo") 
+
+meuTitulo.addEventListener("click", function () {
+     meuTitulo.style.color= "red"
+})
+
+
+             // ***   OU   ***///  
+
+
+const meuTitulo = document.querySelector(".titulo") 
+
+meuTitulo.addEventListener("click", function () {
+meuTitulo.classList.add("vermelha")
+})
 
 
 
+// document.getElementById  >>
 
+// document.getElementsByClassName >>
 
+// document.getElementsByName >>
+
+// document.querySelector >>
+
+// document.querySelectorAll >>
