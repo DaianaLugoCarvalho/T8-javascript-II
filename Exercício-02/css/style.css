@@ -27,5 +27,6 @@ body {
 }
 
 .cat{
-    display: none
+    /* display: none; */
+    opacity: 0;
 }
