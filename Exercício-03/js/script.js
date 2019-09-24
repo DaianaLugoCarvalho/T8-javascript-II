@@ -42,12 +42,6 @@ document.addEventListener ("scroll", function() {
 })
 
 
-
-
-
-
-
-
 // document.addEventListener("wheel", function() {
 //     console.log( "num sei bem ainda")
 // }
@@ -66,6 +60,69 @@ document.addEventListener ("scroll", function() {
 // })
 
 
+  
+let aluna= {  // declarar objeto {}, ele indica uma coleção, existe 2 tipos de coisas dentro do objeto = propriedade e objeto
+    "nome": "jenifer"
+}  
+
+
+let prof = {
+    "materia": "js"
+}
+
+prof.idade=25 // para acrescentar propriedades dentro do objeto
+
+prof.ensinar= function () { console.log("aluna aprendeu")} // para colocar um metodo. 
+
+prof.ensinar() // para chamar a função
 
 
 
+   /// *****  
+
+let fruta = { "nome": "uva"}
+
+let frutas = { "nome": "uva"}
+
+fruta == frutas
+
+
+   /// *****  
+
+let minhaGata= {
+    "nome": "Rory",
+    "idade" : 7,
+    "cor": "off-white",
+    "hibbies" : ["dormir", "dormi de barriga pra cima", "mostrar dentinhos"],
+    ronronar: function () { console.log ("miau") }
+}
+
+
+let gato = { // assim vai sobrescrever
+    "nome": "theo",
+    "nome": "rory",
+    "nome":"arya"
+}
+
+let gatos = {
+    "milena": "rory",
+    "carol": "arya",
+    "manu": "nara"
+}
+
+gatos.manu{
+
+}
+
+
+   /// *****  
+
+let  animal = {
+    "nome" : "emilia",
+    "tipo" : "Peixe",
+    aparecer: function () { console.log (animal.nome) }
+}
+
+animal.aparecer() // para chamar a função, 
+
+emilia // <-- o que retorna
