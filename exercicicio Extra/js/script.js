@@ -66,10 +66,42 @@ formulario.addEventListener ("submit", function(evento) {
     //     input.value
         
     // }
-
-
-
 })
+
+
+      // ATRIBUTO <a> </a> e href //
+
+const meuLink = document.createElement("a") //criar a tag <a> e guardar numa var
+
+const mae = document.getElementById("sou-a-mae") // chamar a mae que esta no html pelo ID 
+
+mae.appendChild(meuLink) //mae adota o filho
+
+meuLink.textContent ="site do pudim" // o que vai estar escrito no link, para onde vai quando clicado
+
+meuLink.setAttribute("href","http://www.pudim.com.br") //setAttribute recebe 2valores, o atributo e qual o valor que quer dar a ele. 
+
+meuLink.setAttribute("target", "_blanck") //acrescentar 
+
+
+      // PEGAR O VALOR O ATRIBUTO PELO JS //
+
+const input =document.getElementById("meuInput")
+
+const valorDoAtributo= document.getAttribue ("value") // para saber o valor do atributo,
+
+console.log(valorDoAtributo)
+
+   
+     // PEGAR O VALOR O ATRIBUTO PELO JS >> OUTRO EXEMPLO //
+
+const link = document.getElementById("bratz") //pegar pelo ID no html
+
+const endereço = document.getAttribue ("href") // pegar o href que esta no html
+
+console.log(endereço) // printar na tela o conteudp que esta no href
+
+
 
 
     

@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(255, 226, 250);
+}
+
+#dados{
+    color: hsl(300, 50%, 40%);
+    font-size: 18px; 
+    font-family: Arial, Helvetica, sans-serif 
+}
+
