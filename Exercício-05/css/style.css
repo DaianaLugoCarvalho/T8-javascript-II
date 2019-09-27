@@ -77,6 +77,16 @@ body {
     margin: 0 5px 0 40%;
     color: #fff;
 }
+.botao-lidoVrm{
+    background-color: #bb5e85;
+}
+
+.desticar{
+    display: none
+}
+
+
+
 
 @media(min-width: 400px) {
     .botao-lido {

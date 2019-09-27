@@ -40,7 +40,7 @@ let dadoCinco = document.createElement("a")
 mae.appendChild(dadoCinco)
 dadoCinco.textContent= "Meu site"
 dadoCinco.setAttribute("href", dados["site"])
-dadoCinco.setAttribute ("target", "_blanck")
+dadoCinco.setAttribute ("target", "_blank")
 
 
     //// >>>  COLOCAR IMG PELO JS  <<<<  /////
